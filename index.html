@@ -1,32 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang=en>
     <head>
         <meta charset=utf-8>
         <title>Macie Ryan's Portfolio</title>
         <link rel="stylesheet" type="text/css" href="theme.css">
     </head>
-    
-    <h1>Macie's Portfolio</h1>
-    
-    
-    <h3>Certifications</h3>
-    <ol>
-        <li>Microsoft Word</li>
-        <li>Microsoft Excel</li>
-        <li>Microsoft Outlook</li>
-        <li>Microsoft Powerpoint</li>
-    </ol>
-    
-    <h3>School</h3>
-    <img src="https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/cbk/teams/retina/1383.vresize.200.200.medium.0.png" />
-    <img src="https://upload.wikimedia.org/wikipedia/en/c/c6/Gch-logo.jpg" alt="Gulf Coast High School logo" />
 
-    
-    <h3>Where to Find Macie</h3>
-    <a href="https://twitter.com/Macie_Ryan">Macie's Twitter Profile</a>
-    
-    <h3>Macie's Achievements</h3>
-    <a href="https://www.codecademy.com/macieryan">Codecademy Achievements</a>
-    
-</html>
+
+    <body>
+        <h1>Everything about Macie Ryan can be found using the tabs below:</h1>
+
+    //creating the tabs
+    <div id="Biography" class="tabcontent">
+      <h3>Biography</h3>
+      <p>biography about macie</p>
+
+    </div>
+
+    <div id="Certifications" class="tabcontent">
+      <h3>Certifications</h3>
+      <p>Paris is the capital of France.</p> 
+    </div>
+
+    <div id="Education" class="tabcontent">
+      <h3>Education</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div id="Coursework" class="tabcontent">
+        <h3>Coursework</h3>
+        <p>A list of college courses and their syllabi.</p>
+
+    </div>
+
+    <button class="tablink" onclick="openCity('Biography', this, 'mediumvioletred')" id="defaultOpen">Biography</button>
+    <button class="tablink" onclick="openCity('Certifications', this, 'darkseagreen')">Certifications</button>
+    <button class="tablink" onclick="openCity('Education', this, 'skyblue')">Education</button>
+    <button class="tablink" onclick="openCity('Coursework', this, 'yellowgreen')">Coursework</button>
+
+    <script>
+        function openCity(cityName,elmnt,color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(cityName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    </body>
+</html> 
 
