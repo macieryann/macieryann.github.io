@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang=en>
+    
+    <head>
+        <meta charset=utf-8>
+        <title>Input, Processing, and Output</title>
+        <link rel="stylesheet" type="text/css" href="theme.css">
+    </head>
+    
+<body>
+    
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="education.html">Education</a>
+        <a href="coursework.html">Coursework</a>
+        <a class="active" href="cipher.html">Caesar Cipher</a>
+    </div>
+    
+    <div style="padding-left:16px">
+    <h1>JavaScript IPO</h1>
+        <p>Right click and view source to see code. </p>
+        <p>Input a number:</p>
+
+        <input id="in">
+
+        <button type="button" onclick="myFunction()">Submit</button>
+
+        <p id="out"></p>
+
+        <script>
+            function myFunction() {
+                var asciiCode, encryptedText = "";
+                var index = 0;
+                
+                // Input
+                var inVar = document.getElementById("in").value;
+
+                // Processing
+                for(index = 0; index < inVar.length; index++){
+                    asciiCode = inVar.charCodeAt(index);
+                    asciiCode = asciiCode + 3;
+                    encryptedText += String.fromCharCode(asciiCode);
+                }
+                
+                // Output
+                document.getElementById("out").innerHTML = encryptedText;
+
+
+            }
+        </script>
+    </div>
+        
+</body>
+</html>
