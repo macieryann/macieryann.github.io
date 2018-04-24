@@ -38,7 +38,10 @@
                 // Processing
                 for(index = 0; index < inVar.length; index++){
                     asciiCode = inVar.charCodeAt(index);
-                    asciiCode = asciiCode + 3;
+                    //checking that letters are being inputted
+                    if((asciiCode >= 65 && asciiCode <= 90) || (asciiCode >= 97 && asciiCode <= 122){
+                        asciiCode = asciiCode + 3;
+                    }
                     encryptedText += String.fromCharCode(asciiCode);
                 }
                 // Output
