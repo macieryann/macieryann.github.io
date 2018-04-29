@@ -9,7 +9,7 @@
     </head>
     
 <body>
-    <!--Creating tabs at the top of the page-->
+    <!--Creating the tabs on top-->
     <div class="topnav">
         <a href="index.html">Home</a>
         <a href="biography.html">Biography</a>
@@ -23,8 +23,11 @@
     <h1>JavaScript IPO</h1>
         <p>Right click and view source to see code. </p>
         <p>Input a number:</p>
+
         <input id="in">
+
         <button type="button" onclick="myFunction()">Submit</button>
+
         <p id="out"></p>
 
         <script>
@@ -35,19 +38,16 @@
                 // Input
                 var inVar = document.getElementById("in").value;
 
-                //Processing
+                // Processing
                 for(index = 0; index < inVar.length; index++){
                     asciiCode = inVar.charCodeAt(index);
-                    //checking that letters are being inputted
-                    if((asciiCode >= 65 && asciiCode <= 90) || (asciiCode >= 97 && asciiCode <= 122){
-                        asciiCode = asciiCode + 3;
-                    }
+                    asciiCode = asciiCode + 3;
                     encryptedText += String.fromCharCode(asciiCode);
                 }
                 // Output
-                document.getElementById("out").innerHTML = encryptedText;
+                document.getElementById("out").innerHTML = encryptedText
             }
         </script>
-    </div>        
+    </div>   
 </body>
 </html>
