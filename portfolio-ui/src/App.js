@@ -1,24 +1,31 @@
 import './App.css';
-import Header from './layout/header';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import BeachHeader from './components/beach/beachheader';
+import Contact from './components/contact';
+import Intro from './components/intro';
+import Navbar from './components/navbar';
 import Projects from './components/projects';
 import Resume from './components/resume';
 import Socials from './components/socials';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <main className="App-content">
-          <Routes>
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/socials" element={<Socials />} />
-          </Routes>
-        </main>
-      </div>
-    </Router>
+    <div className="App">
+      <BeachHeader />
+      <Navbar />
+      <Intro />
+      <section id="Resume">
+        <Resume />
+      </section>
+      {/* <section id="Socials">
+        <Socials />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section> */}
+    </div>
   );
 }
 

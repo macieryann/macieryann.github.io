@@ -4,11 +4,11 @@ const theme = createTheme({
     palette: {
         primary: {
             // often used for buttons, links, and other interactive elements
-            main: '#b2456e',
+            main: '#097cc1',
         },
         secondary: {
             // typically used for secondary actions and highlights
-            main: '#7c8363',
+            main: '#097cc1',
         },
         tierary: {
             main: '#df5587'
@@ -24,7 +24,11 @@ const theme = createTheme({
             color: '#333',
         },
         h1: {
-            color: '#000',
+            color: '#000000',
+            alignContent: 'center'
+        },
+        h2: {
+            alignContent: 'left',
         },
         h6: {
             color: '#fbeae7'
