@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/macieryann.github.io/static/css/main.09bdb146.css",
+    "main.js": "/macieryann.github.io/static/js/main.655f6c75.js",
+    "static/js/787.2f4b1d9a.chunk.js": "/macieryann.github.io/static/js/787.2f4b1d9a.chunk.js",
+    "index.html": "/macieryann.github.io/index.html",
+    "main.09bdb146.css.map": "/macieryann.github.io/static/css/main.09bdb146.css.map",
+    "main.655f6c75.js.map": "/macieryann.github.io/static/js/main.655f6c75.js.map",
+    "787.2f4b1d9a.chunk.js.map": "/macieryann.github.io/static/js/787.2f4b1d9a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09bdb146.css",
+    "static/js/main.655f6c75.js"
+  ]
+}
