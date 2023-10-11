@@ -13,7 +13,7 @@ const theme = createTheme({
         MuiTabs: {
             styleOverrides: {
                 indicator: {
-                    backgroundColor: '#8D3757', // Set your desired color
+                    backgroundColor: '#8D3757',
                 },
             },
         },
@@ -22,7 +22,7 @@ const theme = createTheme({
                 root: {
                     '&.Mui-selected': {
                         backgroundColor: '#8D3757',
-                        boxShadow: 'none', // Remove the focus indicator
+                        boxShadow: 'none',
                     },
                 },
             },
