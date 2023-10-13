@@ -8,10 +8,10 @@ export default function Socials() {
             <Card className="resume-card">
                 <h1>My Socials</h1>
                 <h3 className="left-align">LinkedIn</h3>
-                <a className="left-align" href="https://www.linkedin.com/in/macieryan" target="_blank">I'm on LinkedIn!</a>
+                <a className="left-align" href="https://www.linkedin.com/in/macieryan" target="_blank" rel="noreferrer">I'm on LinkedIn!</a>
                 <h3 className="left-align">Github</h3>
-                <a className="left-align" href="https://github.com/macieryann/" target="_blank">I'm on Github too!</a>
-
+                <a className="left-align" href="https://github.com/macieryann/" target="_blank" rel="noreferrer">I'm on Github too!</a>
+                <p></p>
             </Card>
         </Container>
     );

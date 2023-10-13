@@ -1,10 +1,8 @@
 import './App.css';
 import BeachHeader from './components/beach/beachheader';
 import Contact from './components/contact';
-import { ContactForm } from './components/contactform';
 import Intro from './components/intro';
 import Navbar from './components/navbar';
-import Projects from './components/projects';
 import Resume from './components/resume';
 import Socials from './components/socials';
 
@@ -36,8 +34,11 @@ function App() {
       <section id="resume" href='#resume'>
         <Resume />
       </section>
-      <section id="Socials" href='#socials'>
+      <section id="socials" href='#socials'>
         <Socials />
+      </section>
+      <section id="contact" href="#contact">
+        <Contact />
       </section>
       {/*<section id="projects" href='#projects'>
         <Projects />
