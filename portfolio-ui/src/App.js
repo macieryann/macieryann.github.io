@@ -5,6 +5,7 @@ import Intro from './components/intro';
 import Navbar from './components/navbar';
 import Resume from './components/resume';
 import Socials from './components/socials';
+import Projects from './components/projects';
 
 function enableSmoothScrolling() {
   const links = document.querySelectorAll('.nav-link');
@@ -34,15 +35,15 @@ function App() {
       <section id="resume" href='#resume'>
         <Resume />
       </section>
+      <section id="projects" href='#projects'>
+        <Projects />
+      </section>
       <section id="socials" href='#socials'>
         <Socials />
       </section>
       <section id="contact" href="#contact">
         <Contact />
       </section>
-      {/*<section id="projects" href='#projects'>
-        <Projects />
-      </section> */}
       {/* <section id="contact" href='#contactform'>
         <ContactForm />
       </section> */}

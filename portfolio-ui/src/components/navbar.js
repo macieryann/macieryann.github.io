@@ -31,6 +31,15 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                     <a
+                        href="#projects"
+                        className="nav-link"
+                        onClick={() => handleScroll('projects')}
+                    >
+                        Projects
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a
                         href="#socials"
                         className="nav-link"
                         onClick={() => handleScroll('socials')}

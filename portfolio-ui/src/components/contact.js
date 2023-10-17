@@ -10,7 +10,7 @@ export default function Contact() {
             <h3 className="left-align">Email</h3>
             <a className="left-align" href="mailto:ryanmacie@yahoo.com">Send Email</a>
             <h3 className="left-align">Cell Phone</h3>
-            <a className="left-align">(239) 308-6446</a>
+            <p className="left-align">(239) 308-6446</p>
             <p></p>
         </Card>
     </Container>
