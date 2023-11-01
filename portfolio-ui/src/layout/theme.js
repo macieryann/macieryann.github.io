@@ -15,7 +15,7 @@ const theme = createTheme({
         },
         background: {
             // background color of the app
-            default: '#FBEAE7',
+            default: '#000000',
         },
     },
     typography: {

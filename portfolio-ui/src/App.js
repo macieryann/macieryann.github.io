@@ -17,36 +17,36 @@ function enableSmoothScrolling() {
       const target = document.getElementById(targetId);
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
+        console.log('Smooth scroll to ${targetId}');
+      } else {
+        console.log('Target ${targetId} not found');
       }
     });
   });
 }
 
-enableSmoothScrolling();
-
 function App() {
+  console.log('App component mounted');
+  enableSmoothScrolling();
   return (
     <div className="App">
       <BeachHeader />
       <Navbar />
-      <section id="intro" href='#about'>
+      <section id="intro">
         <Intro />
       </section>
-      <section id="resume" href='#resume'>
+      <section id="resume">
         <Resume />
       </section>
-      <section id="projects" href='#projects'>
+      <section id="projects">
         <Projects />
       </section>
-      <section id="socials" href='#socials'>
+      <section id="socials">
         <Socials />
       </section>
-      <section id="contact" href="#contact">
+      <section id="contact">
         <Contact />
       </section>
-      {/* <section id="contact" href='#contactform'>
-        <ContactForm />
-      </section> */}
     </div>
   );
 }
