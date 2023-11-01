@@ -17,9 +17,6 @@ function enableSmoothScrolling() {
       const target = document.getElementById(targetId);
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
-        console.log('Smooth scroll to ${targetId}');
-      } else {
-        console.log('Target ${targetId} not found');
       }
     });
   });
@@ -40,9 +37,6 @@ function App() {
       </section>
       <section id="projects">
         <Projects />
-      </section>
-      <section id="socials">
-        <Socials />
       </section>
       <section id="contact">
         <Contact />
