@@ -1,3 +1,3 @@
 # macieryann.github.io
 
-https://www.youtube.com/watch?v=HOF8845OzH8
+Use the following URL to access the React Portfolio: https://macieryann.github.io/macieryan
