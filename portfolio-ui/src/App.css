@@ -89,11 +89,37 @@ html, body {
 .intro-padding {
   padding-top: 290px;
   padding-bottom: 600px;
+  display: grid;
+  place-items: center;
 }
 
 .intro-typography {
   position: relative;
   z-index: 1;
+}
+
+.typing-effect {
+  width: 50ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 
 .Resume {
