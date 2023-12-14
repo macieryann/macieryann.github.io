@@ -110,6 +110,13 @@ html, body {
   font-size: 2em;
 }
 
+.restart-typing {
+  animation: none;
+  animation: typing 2s steps(22) infinite alternate;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
 @keyframes typing {
   from {
     width: 0
@@ -139,6 +146,18 @@ html, body {
   min-width: 90%;
 }
 
+.projects-card {
+  position: relative;
+  z-index: 1; 
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  min-width: 90%;
+}
+
 .component-padding {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -154,8 +173,7 @@ html, body {
 }
 
 .paragraph {
-  display: flex;
-  text-align: left;
+  text-align: left !important;
   padding-left: 10px;
 }
 
